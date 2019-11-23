@@ -21,6 +21,7 @@ public class SecondActivity extends AppCompatActivity {
            Log.d("NAME", name);
        }
     }
+
     public void onBackPressed()
     {
       showAlert();
@@ -30,13 +31,13 @@ public class SecondActivity extends AppCompatActivity {
     {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setIcon(R.drawable.ic_action_name);
-        alertDialogBuilder.setTitle("login Error");
-        alertDialogBuilder.setMessage("Please Enter Your Name");
+        alertDialogBuilder.setTitle("Back");
+        alertDialogBuilder.setMessage("Are you sure you want to go back");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which)
             {
-
+              finish();
             }
         });
         alertDialogBuilder.setNegativeButtonIcon(getResources().getDrawable(R.drawable.ic_action_name));
