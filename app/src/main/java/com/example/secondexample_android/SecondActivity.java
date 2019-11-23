@@ -21,9 +21,10 @@ public class SecondActivity extends AppCompatActivity {
            Log.d("NAME", name);
        }
     }
-
+    @Override
     public void onBackPressed()
     {
+        //super.onBackPressed();
       showAlert();
     }
 
@@ -34,7 +35,7 @@ public class SecondActivity extends AppCompatActivity {
         alertDialogBuilder.setTitle("Back");
         alertDialogBuilder.setMessage("Are you sure you want to go back");
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
+
             public void onClick(DialogInterface dialog, int which)
             {
               finish();
