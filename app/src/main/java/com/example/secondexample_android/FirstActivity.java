@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -21,6 +22,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
     private Button btnGoNext;
     private ToggleButton toggleButton;
     private TextView txtColor;
+    private Switch switchButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         btnGoNext = findViewById(R.id.btnLogin);
         toggleButton = findViewById(R.id.toggleButton);
         txtColor = findViewById((R.id.txtColor));
+        switchButton = findViewById(R.id.btnSwitch);
 
        // btnGoNext.setOnClickListener(new On);
         btnGoNext.setOnClickListener(this);

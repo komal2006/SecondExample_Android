@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".FirstActivity">
 
     <EditText
@@ -58,6 +59,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="53dp"
+        android:fontFamily="@font/abril_fatface"
         android:text="Change Color"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -65,4 +67,26 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/toggleButton"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="143dp"
+        android:text="Remember Me"
+        android:textColorHighlight="#4CAF50"
+        android:textColorLink="#FFEB3B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggleButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="152dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSwitch"
+        app:layout_constraintTop_toTopOf="@+id/txtColor" />
 </androidx.constraintlayout.widget.ConstraintLayout>
